@@ -26,18 +26,20 @@ router.get('/', (req, res) => {
 // });
 
 // handle all POST requests that match '/'
-router.post('/item', (req: Request, res: Response) => {
-  if (!('name' in req.body) || !('price' in req.body)) {
-    res.status(400).send('Missing required variables!');
-  }
-  const name = req.body.name as string;
-  const price = Number(req.body.price);
-  if (name.length < 0 || name.length > 26 || isNaN(price)) {
-    return res.status(400).send('Invalid argument shape!');
-  }
-  const uuid = createItem(name, price);
-  return res.send({
-    uuid
+router.post('/item', async (req: Request, res: Response) => {
+  router.post('/item', async (req: Request, res: Response) => {
+    if (!('name' in req.body) || !('price' in req.body)) {
+      res.status(400).send('Missing required variables!');
+    }
+    const name = req.body.name as string;
+    const price = Number(req.body.price);
+    if (name.length < 0 || name.length > 26 || isNaN(price)) {
+      return res.status(400).send('Invalid argument shape!');
+    }
+    const uuid = await createItem(req.dbConnection, name, price);
+    return res.send({
+      uuid
+    });
   });
 });
 

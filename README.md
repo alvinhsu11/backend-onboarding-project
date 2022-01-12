@@ -11,6 +11,8 @@ This project uses Node.js with Typescript, and uses the ExpressJS framework + Do
 ```bash
 # after cloning
 yarn install
+# start the database (detached, so you don't have to worry about keeping that process running)
+docker-compose up # install docker @ docker.com/get-started
 yarn watch # this will run the server and auto recompile/re-run it anytime you make a change
 # navigate to localhost:3000 to see the server!
 ```

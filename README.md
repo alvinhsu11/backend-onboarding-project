@@ -84,7 +84,7 @@ A diagram detailing the database structure can be found [here](https://dbdiagram
   - `password`: 
   - Response:
     - `uuid`: the uuid of the user (used as an id for other methods)
-- [ ] `GET /users`: gets all users (we're not worried about security for the scope of this project)
+- [x] `GET /users`: gets all users (we're not worried about security for the scope of this project)
   - Response:
     - an array of objects of the following shape
       - `uuid`: a user's uuid

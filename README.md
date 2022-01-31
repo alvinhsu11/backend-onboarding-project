@@ -48,7 +48,7 @@ A diagram detailing the database structure can be found [here](https://dbdiagram
 - [x] `DELETE /items/:uuid` - deletes an item
   - Response:
     - non 200 status code if there was a failure, 200 status code if it suceeded
-- [ ] `POST /order` - creates an order
+- [x] `POST /order` - creates an order
   - Input (Body, in json or form data)
     - `itemId`: the uuid corresponding with the item
     - `userId`: the uuid corresponding with the user who made the order

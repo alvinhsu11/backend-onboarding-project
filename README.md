@@ -38,14 +38,14 @@ A diagram detailing the database structure can be found [here](https://dbdiagram
       - `name`: the name of the item
       - `price`: the price of the item
       - `createdAt`: the time the item was created
-- [ ] `POST /item` - creates an item
+- [x] `POST /item` - creates an item
   - Input (Body, in json or form data)
     - `name`: the name of the item
     - `description`: the description of the item
     - `price`: the price of the item
   - Response:
     - `uuid`: the newly created item's uuid
-- [ ] `DELETE /items/:uuid` - deletes an item
+- [x] `DELETE /items/:uuid` - deletes an item
   - Response:
     - non 200 status code if there was a failure, 200 status code if it suceeded
 - [ ] `POST /order` - creates an order
@@ -75,11 +75,11 @@ A diagram detailing the database structure can be found [here](https://dbdiagram
       - `item`:
         - `name`: the item name
         - `price`: the item price
-- [ ] `POST /user`: creates a new user
+- [x] `POST /user`: creates a new user
   - Input (Body, in json or form data)
     - `name`: the user's name
     - `password`: the password
-- [ ] `POST /login`: 
+- [x] `POST /login`: 
   - `username`: 
   - `password`: 
   - Response:

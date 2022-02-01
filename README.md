@@ -56,7 +56,7 @@ A diagram detailing the database structure can be found [here](https://dbdiagram
   - Response:
     - `uuid`: the newly created order's uuid
     - `createdAt`: the time the order was made
-- [ ] `GET /orders?userId=`: returns all orders for a given user
+- [x] `GET /orders?userId=`: returns all orders for a given user
   - this uses **query** params (express has this functionality built in)
     - Input (query param)
       - `userId`: the user id
@@ -66,7 +66,7 @@ A diagram detailing the database structure can be found [here](https://dbdiagram
       - `item`:
         - `name`: the item name
         - `price`: the item price
-- [ ] `GET /orders/:uuid`: returns the information associated with an item. To simplify things, we're not going to ask you to add any auth (though adding auth would be cool!)
+- [x] `GET /orders/:uuid`: returns the information associated with an item. To simplify things, we're not going to ask you to add any auth (though adding auth would be cool!)
   - Input (Body, in json or form data)
     - `user`: the uuid of the current user
   - Response

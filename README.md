@@ -89,7 +89,7 @@ A diagram detailing the database structure can be found [here](https://dbdiagram
     - an array of objects of the following shape
       - `uuid`: a user's uuid
       - `name`: a user's name
-- [ ] `GET /user/:uuid`: gets information about a user
+- [x] `GET /user/:uuid`: gets information about a user
   - Response:
     - `uuid`: the user's uuid
     - `name`: a user's name

@@ -66,7 +66,7 @@ A diagram detailing the database structure can be found [here](https://dbdiagram
       - `item`:
         - `name`: the item name
         - `price`: the item price
-- [x] `GET /orders/:uuid`: returns the information associated with an item. To simplify things, we're not going to ask you to add any auth (though adding auth would be cool!)
+- [ ] `GET /orders/:uuid`: returns the information associated with an item. To simplify things, we're not going to ask you to add any auth (though adding auth would be cool!)
   - Input (Body, in json or form data)
     - `user`: the uuid of the current user
   - Response

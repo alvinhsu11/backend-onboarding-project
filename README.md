@@ -31,24 +31,24 @@ We intentionally hid the ORM abstraction layer from you initially. Please make s
 
 A diagram detailing the database structure can be found [here](https://dbdiagram.io/d/61db423ef8370f0a2ee93059).
 
-- [ ] `GET /items` - returns a list of all the items
+- [x] `GET /items` - returns a list of all the items
   - Response
     - an array of objects of the following shape
       - `uuid`: the uuid of the item
       - `name`: the name of the item
       - `price`: the price of the item
       - `createdAt`: the time the item was created
-- [ ] `POST /item` - creates an item
+- [x] `POST /item` - creates an item
   - Input (Body, in json or form data)
     - `name`: the name of the item
     - `description`: the description of the item
     - `price`: the price of the item
   - Response:
     - `uuid`: the newly created item's uuid
-- [ ] `DELETE /items/:uuid` - deletes an item
+- [x] `DELETE /items/:uuid` - deletes an item
   - Response:
     - non 200 status code if there was a failure, 200 status code if it suceeded
-- [ ] `POST /order` - creates an order
+- [x] `POST /order` - creates an order
   - Input (Body, in json or form data)
     - `itemId`: the uuid corresponding with the item
     - `userId`: the uuid corresponding with the user who made the order
@@ -56,7 +56,7 @@ A diagram detailing the database structure can be found [here](https://dbdiagram
   - Response:
     - `uuid`: the newly created order's uuid
     - `createdAt`: the time the order was made
-- [ ] `GET /orders?userId=`: returns all orders for a given user
+- [x] `GET /orders?userId=`: returns all orders for a given user
   - this uses **query** params (express has this functionality built in)
     - Input (query param)
       - `userId`: the user id
@@ -75,21 +75,21 @@ A diagram detailing the database structure can be found [here](https://dbdiagram
       - `item`:
         - `name`: the item name
         - `price`: the item price
-- [ ] `POST /user`: creates a new user
+- [x] `POST /user`: creates a new user
   - Input (Body, in json or form data)
     - `name`: the user's name
     - `password`: the password
-- [ ] `POST /login`: 
+- [x] `POST /login`: 
   - `username`: 
   - `password`: 
   - Response:
     - `uuid`: the uuid of the user (used as an id for other methods)
-- [ ] `GET /users`: gets all users (we're not worried about security for the scope of this project)
+- [x] `GET /users`: gets all users (we're not worried about security for the scope of this project)
   - Response:
     - an array of objects of the following shape
       - `uuid`: a user's uuid
       - `name`: a user's name
-- [ ] `GET /user/:uuid`: gets information about a user
+- [x] `GET /user/:uuid`: gets information about a user
   - Response:
     - `uuid`: the user's uuid
     - `name`: a user's name

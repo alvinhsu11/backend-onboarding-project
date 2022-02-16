@@ -3,6 +3,8 @@ import bodyParser from 'body-parser';
 import "reflect-metadata" // required for typeorm
 import { createConnection } from "typeorm";
 import { Item } from './models/Item';
+import {Profile } from './models/Profile'
+import { Order } from './models/Order';
 import { router } from './controller';
 
 import cors from 'cors'
@@ -21,11 +23,11 @@ const main = async () => {
     type: 'postgres',
     host: "localhost",
     port: 5432,
-    username: "test",
-    password: "password",
+    username: "alvin",
+    password: "anotherkey",
     database: "testdb",
     entities: [
-      Item
+      Item, Profile, Order
     ],
     synchronize: true,
     logging: false

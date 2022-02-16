@@ -4,6 +4,24 @@
 <body>
 	<h1>A frontend writen by a backend engineer</h1>
 
+	<h3>Create Profile</h3>
+	<form action="/user" method="post">
+		<label for="name">Username:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="pass">Password:</label>
+		<input type="text" id="pass" name="pass"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<h3>Log in</h3>
+	<form action="/logIn" method="post">
+		<label for="name">Username:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="pass">Password:</label>
+		<input type="text" id="pass" name="pass"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+
 	<h3>Create Items</h3>
 	<form action="/item" method="post">
 		<label for="name">Item name:</label>
@@ -24,6 +42,48 @@
 		<input type="text" id="name" name="name"><br><br>
 		<input type="submit" value="Delete">
 	</form>
+  
+	<h3>Order Item</h3>
+	<form action="/order" method="post">
+		<label for="itemId">Item Id:</label>
+		<input type="text" id="itemId" name="itemId"><br><br>
+		<label for="userId">User Id:</label>
+		<input type="text" id="userId" name="userId"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+  <h3>Get orders of user</h3>
+	<form action="/orders" method="get">
+		<label for="userId">User Id:</label>
+		<input type="text" id="userId" name="userId"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<h3>Get info about user</h3>
+	<form action="/user" method="get">
+		<label for="userId">User Id:</label>
+		<input type="text" id="userId" name="userId"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<!-- <h3>Get info about item order</h3>
+	<form action="/orders" method="get">
+		<label for="orderId">Order Id:</label>
+		<input type="text" id="orderId" name="orderId"><br><br>
+		<input type="submit" value="Submit">
+	</form> -->
+
+
+	<h3>Get List of Users</h3>
+	<form action="/users" method="get">
+		<input type="submit" value="Submit">
+	</form>
+
+	<h3>Get List of Items</h3>
+	<form action="/items" method="get">
+		<input type="submit" value="Submit">
+	</form>
+
 </body>
 
 </html>
